@@ -130,9 +130,9 @@ Before the function is called:
 - The **Global Execution Context** is created
 - `do_something` is stored in the global environment
 
-	Global Execution Context
-	  Variable Environment:
-	    do_something → <function>
+		Global Execution Context
+		  Variable Environment:
+		    do_something → <function>
 
 ---
 
@@ -154,14 +154,14 @@ Calling `do_something()` creates a **Function Execution Context**.
 - `b` → uninitialized (Temporal Dead Zone)
 - Outer Reference → Global Environment
 
-	Execution Context (do_something)
-	  Lexical Environment:
-	    b → <uninitialized>
-	    outer → Global
-	  Variable Environment:
-	    a → undefined
-	    c → undefined
-	    outer → Global
+		Execution Context (do_something)
+		  Lexical Environment:
+		    b → <uninitialized>
+		    outer → Global
+		  Variable Environment:
+		    a → undefined
+		    c → undefined
+		    outer → Global
 
 ---
 
